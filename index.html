@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techoniq</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="top-section">
+            <nav class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                    <div class="nav-title">
+                        <img src="./assets/logo.png" alt="techoniq logo">
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">About us</a></li>
+                    <li><a href="javascript:void(0)">Services</a></li>
+                    <li><a href="javascript:void(0)">Casestudy</a></li>
+                    <li><a href="javascript:void(0)">Industries</a></li>
+                    <li><a href="javascript:void(0)">Branding</a></li>
+                    <li><a href="javascript:void(0)">Contact us</a></li>
+                </ul>
+            </nav>
+            <section class="built-software">
+                <div class="built-software-left">
+                    <p class="blue-para">We Built teams That Built</p>
+                    <h1>YOUR SOFTWARE</h1>
+                    <p>We specialize in providing top-notch solutions for your digital needs. Our team of experts
+                        delivers
+                        quality services in app development, logo design, and web development</p>
+                    <button>Discover more</button>
+                </div>
+                <form class="built-software-right" onsubmit="return false">
+                    <input type="text" placeholder="Full name">
+                    <input type="email" placeholder="Email">
+                    <input type="number" placeholder="Phone number" class="no-spin">
+                    <input type="text" placeholder="Country">
+                    <textarea placeholder="Message"></textarea>
+                    <button>REQUEST A QUOTE</button>
+                </form>
+            </section>
+        </section>
+        <section class="icons">
+            <div>
+                <img src="./assets/trustpilot_icon.png" alt="trustpilot icon">
+            </div>
+            <div>
+                <img src="./assets/clutch_icon.png" alt="clutch icon">
+            </div>
+            <div>
+                <img src="./assets/bark_icon.png" alt="bark icon">
+            </div>
+            <div>
+                <img src="./assets/googleReview_icon.png" alt="google reviews icon">
+            </div>
+        </section>
+        <section class="review-section">
+            <div class="review-left">
+                <p>TECHONIQ LLC FZ is rated Excellent</p>
+                <div class="review">
+                    <p>Based on reviews:</p>
+                    <div class="stars-wrapper">
+                        <div class="star"><img src="./assets/star.png" alt="star"></div>
+                        <div class="star"><img src="./assets/star.png" alt="star"></div>
+                        <div class="star"><img src="./assets/star.png" alt="star"></div>
+                        <div class="star"><img src="./assets/star.png" alt="star"></div>
+                        <div class="star"><img src="./assets/star.png" alt="star"></div>
+                    </div>
+                    <img src="./assets/trustpilot_icon.png" alt="trustpilot icon">
+                </div>
+            </div>
+            <div class="review-right">
+                <div class="review-box">
+                    <img class="quote-img quote-img-1" src="./assets/quote.png" alt="quete">
+                    <img class="quote-img quote-img-2" src="./assets/quote.png" alt="quete">
+                    <h1>Mr.John</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus cumque nesciunt debitis
+                        voluptatum velit asperiores vel deserunt in distinctio placeat quia neque voluptate quibusdam,
+                        temporibus repellendus aliquid quo corrupti tempora corporis quidem dolorem delectus optio.</p>
+                    <div class="review-box-arrow"></div>
+                </div>
+            </div>
+        </section>
+        <section class="slide-head-section">
+            <h1>Case Studies Our Featured Projects</h1>
+            <div class="slide-head-names">
+                <p onclick="sliderContent('all',this)">ALL</p>
+                <p onclick="sliderContent('apps',this)">APPS</p>
+                <p onclick="sliderContent('web',this)">WEB DEVELOPMENT</p>
+            </div>
+        </section>
+        <section id="slideAllParent" class="slide-all-section">
+            <div onmouseover="showExploreBtn(this, 'in')" onmouseout="showExploreBtn(this, 'out')"
+                class="large-grid-height">
+                <img src="./assets/pcl1.png" alt="web ui">
+                <div class="slide-all-hover d-none">
+                    <h1>HEXLAB</h1>
+                    <p>Explore More</p>
+                </div>
+            </div>
+            <div onmouseover="showExploreBtn(this, 'in')" onmouseout="showExploreBtn(this, 'out')"
+                class="large-grid-height">
+                <img src="./assets/pcl2.png" alt="web ui">
+                <div class="slide-all-hover d-none">
+                    <h1>ORGA FRUIT</h1>
+                    <p>Explore More</p>
+                </div>
+            </div>
+            <div onmouseover="showExploreBtn(this, 'in')" onmouseout="showExploreBtn(this, 'out')">
+                <img src="./assets/mob1.png" alt="web ui">
+                <div class="slide-all-hover d-none">
+                    <h1>CRYPTER</h1>
+                    <p>Explore More</p>
+                </div>
+            </div>
+            <div onmouseover="showExploreBtn(this, 'in')" onmouseout="showExploreBtn(this, 'out')">
+                <img src="./assets/pc2.png" alt="web ui">
+                <div class="slide-all-hover d-none">
+                    <h1>BOXXY</h1>
+                    <p>Explore More</p>
+                </div>
+            </div>
+            <div onmouseover="showExploreBtn(this, 'in')" onmouseout="showExploreBtn(this, 'out')">
+                <img src="./assets/pc1.png" alt="web ui">
+                <div class="slide-all-hover d-none">
+                    <h1>BRAIN WAVE</h1>
+                    <p>Explore More</p>
+                </div>
+            </div>
+            <div onmouseover="showExploreBtn(this, 'in')" onmouseout="showExploreBtn(this, 'out')">
+                <img src="./assets/mob2.png" alt="web ui">
+                <div class="slide-all-hover d-none">
+                    <h1>AI CHAT</h1>
+                    <p>Explore More</p>
+                </div>
+            </div>
+        </section>
+        <section id="slideParent" class="splide-section d-none">
+            <div class="splide">
+                <div id="app-slider" class="splide__track">
+                    <div id="splide__list" class="splide__list">
+                        <div class="splide__slide">
+                            <div class="slide-left">
+                                <p class="justify-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                                    pariatur consectetur
+                                    natus iusto dignissimos distinctio placeat a ratione necessitatibus. Assumenda
+                                    obcaecati aspernatur iste aliquid recusandae minima provident molestiae error magni
+                                    nostrum ipsam debitis, commodi possimus expedita? Rem ipsam labore nobis!</p>
+                                <h1>1. Pay App</h1>
+                                <p class="justify-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Nostrum
+                                    vitae magni
+                                    similique error sequi, iusto, ex quibusdam debitis provident accusantium quod
+                                    recusandae dicta, veritatis nulla aliquam doloremque adipisci quidem at?</p>
+                                <p class="justify-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                                    corrupti
+                                    explicabo
+                                    maiores corporis delectus ut magni soluta, recusandae ullam est nulla. Aspernatur,
+                                    sequi.</p>
+                            </div>
+                            <div class="slide-right">
+                                <img src="./assets/Group 7.png" alt="pay app image">
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="slide-left">
+                                <p class="justify-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Nostrum
+                                    vitae magni
+                                    similique error sequi, iusto, ex quibusdam debitis provident accusantium quod
+                                    recusandae dicta, veritatis nulla aliquam doloremque adipisci quidem at?</p>
+                                <h1>2. Equalizer App</h1>
+                                <p class="justify-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                                    corrupti
+                                    explicabo
+                                    maiores corporis delectus ut magni soluta, recusandae ullam est nulla. Aspernatur,
+                                    sequi.</p>
+                                <p class="justify-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                                    pariatur consectetur
+                                    natus iusto dignissimos distinctio placeat a ratione necessitatibus. Assumenda
+                                    obcaecati aspernatur iste aliquid recusandae minima provident molestiae error magni
+                                    nostrum ipsam debitis, commodi possimus expedita? Rem ipsam labore nobis!</p>
+                            </div>
+                            <div class="slide-right equalizer-app">
+                                <img src="./assets/Group-5.png" alt="pay app image">
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="slide-left">
+                                <p class="justify-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Nostrum
+                                    vitae magni
+                                    similique error sequi, iusto, ex quibusdam debitis provident accusantium quod
+                                    recusandae dicta, veritatis nulla aliquam doloremque adipisci quidem at?</p>
+                                <h1>3. Recipe App</h1>
+                                <p class="justify-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+                                    quis
+                                    fuga expedita deserunt? Distinctio ipsum illum quibusdam dolore natus nisi error et
+                                    quae
+                                    quod ratione? Quia autem voluptate assumenda error sit perspiciatis dolore corrupti
+                                    accusamus suscipit.</p>
+                                <p class="justify-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                                    corrupti
+                                    explicabo
+                                    maiores corporis delectus ut magni soluta, recusandae ullam est nulla. Aspernatur,
+                                    sequi.</p>
+                            </div>
+                            <div class="slide-right equalizer-app">
+                                <img src="./assets/Group 29.png" alt="recipe app image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="splide__pagination"></div>
+        </section>
+        <section class="experties-section">
+            <h1>Synergizing Software House Experties with Digital Agency Sensibilities</h1>
+            <div class="experties-wrapper">
+                <div onclick="changeBg(this)" class="expertie">
+                    <div class="expertie-img">
+                        <img src="./assets/phone.png" alt="phone icon">
+                    </div>
+                    <h1>Mobile App Development</h1>
+                    <p>We develop Android and iOS apps using Flutter, with a focus on user experience and scalability.
+                        Our services include project scoping, UI design, development, and quality assurance.</p>
+                </div>
+                <div onclick="changeBg(this)" class="expertie">
+                    <div class="expertie-img">
+                        <img src="./assets/pc.png" alt="monitor icon">
+                    </div>
+                    <h1>Web Development</h1>
+                    <p>We build SEO-friendly, responsive websites that align with your business goals and values. Using
+                        the latest web tech, we deliver user-friendly sites that are easy to maintain.</p>
+                </div>
+                <div onclick="changeBg(this)" class="expertie">
+                    <div class="expertie-img">
+                        <img class="rotate" src="./assets/marketing.png" alt="marketing icon">
+                    </div>
+                    <h1>Digital Marketing</h1>
+                    <p>We create unique logos that reflect your brand's values and appeal to your target audience. With
+                        multiple design options and revisions, our versatile logos are ready for all your marketing
+                        needs.</p>
+                </div>
+            </div>
+        </section>
+        <section class="software-section">
+            <div class="software-left">
+                <h1>Innovative Solutions and Exceptional Service</h1>
+                <p class="justify-para">Techoniq is a cutting-edge company specializing in a range of services to help
+                    businesses thrive in
+                    the digital age. With a strong focus on app development, logo design, and web development, our team
+                    of experts are dedicated to delivering innovative and high-quality solutions to meet the unique
+                    needs of our clients.</p>
+                <p class="justify-para">At Techoniq, we understand that technology is constantly evolving, and we strive
+                    to stay ahead of the
+                    curve by utilizing the latest tools and techniques to deliver exceptional results. With a focus on
+                    user experience, performance, and scalability, we are committed to delivering solutions that help
+                    our clients achieve their business goals and stay competitive in today's fast-paced digital
+                    landscape.</p>
+                <p class="justify-para">Choose Techoniq for all your app development, logo design, and web development
+                    needs, and experience
+                    the difference that our expertise, creativity, and dedication can make for your business.</p>
+            </div>
+            <div class="software-right">
+                <div>
+                    <img src="./assets/software-right.png" alt="software image">
+                </div>
+            </div>
+        </section>
+        <section class="tech-section">
+            <h1>Let's build long-lasting software together</h1>
+            <div class="technologies-wrapper">
+                <div class="technology">
+                    <img src="./assets/download.png" alt="flutter icon">
+                    <p>FLUTTER</p>
+                </div>
+                <div class="technology">
+                    <img src="./assets/icon-software-tab-1.png" alt="react icon">
+                    <p>REACT.JS</p>
+                </div>
+                <div class="technology">
+                    <img src="./assets/icon-software-tab-2.png" alt="python icon">
+                    <p>PYTHON</p>
+                </div>
+                <div class="technology">
+                    <img src="./assets/icon-software-tab-3.png" alt="django icon">
+                    <p>DJANGO</p>
+                </div>
+                <div class="technology">
+                    <img src="./assets/+.png" alt="angular icon">
+                    <p>ANGULAR</p>
+                </div>
+            </div>
+        </section>
+        <section class="location-section">
+            <h1>Location</h1>
+            <div class="contacts-wrapper">
+                <div class="contact">
+                    <div>
+                        <img src="./assets/location-loc.png" alt="location icon">
+                    </div>
+                    <p>2 Riverway Drive, Houseton, TX 77056</p>
+                </div>
+                <div class="contact">
+                    <div>
+                        <img src="./assets/phone-loc.png" alt="phone icon">
+                    </div>
+                    <p>+1 564 782 164 8</p>
+                </div>
+                <div class="contact">
+                    <div>
+                        <img src="./assets/email-loc.png" alt="mail icon">
+                    </div>
+                    <p>info@techoniq.com</p>
+                </div>
+            </div>
+            <div class="cities-wrapper">
+                <div class="city">
+                    <p>LONDON</p>
+                    <div class="city-img" id="uk">
+                        <h1>UK</h1>
+                    </div>
+                </div>
+                <div class="city">
+                    <p>NEW YORK</p>
+                    <div class="city-img" id="us">
+                        <h1>USA</h1>
+                    </div>
+                </div>
+                <div class="city">
+                    <p>DUBAI</p>
+                    <div class="city-img" id="uae">
+                        <h1>UAE</h1>
+                    </div>
+                </div>
+                <div class="city">
+                    <p>KARACHI</p>
+                    <div class="city-img" id="pk">
+                        <h1>PAK</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-section">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <div class="footer-logo">
+                        <img src="./assets/logo.png" alt="">
+                    </div>
+                    <h2>Looking to Get Started?</h2>
+                    <p class="justify-para">Ready to get started on your project? Contact us today and let us help you
+                        bring your idea to
+                        life.</p>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li class="footer-list-head">MENU</li>
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Case Study</li>
+                        <li>Blogs</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li class="footer-list-head">SERVICES</li>
+                        <li>Android App Development</li>
+                        <li>IOS App Development</li>
+                        <li>Flutter App Development</li>
+                        <li>Web Design & Development</li>
+                        <li>Logo Design</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li class="footer-list-head">GET IN TOUCH WITH US</li>
+                        <li>+1 564 782 164 8</li>
+                        <li>info@techoniq.com</li>
+                        <li>2 Riverway Drive, Houseton, TX 77056</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &#169; 2023 Techoniq | All rights reserved.</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+<script src="app.js"></script>
+
+</html>
